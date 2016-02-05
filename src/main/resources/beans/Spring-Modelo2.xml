@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- o restante dos beans aqui, outros no modelo1 -->
+	<bean id="modelo2Id" class="com.williansmartins.model.Modelo" >
+		<property name="classe2" ref="classe2Id"></property>		
+	</bean>
+	
+	<bean id="testaFieldId" class="com.williansmartins.field.TestaFields" >
+		<property name="classe2" ref="classe2Id" />
+	</bean>
+	
+</beans>
